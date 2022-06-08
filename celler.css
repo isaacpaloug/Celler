@@ -137,12 +137,19 @@ table, tr, td {
     border-radius: 2mm;
 }
 
-#blocfirma {
+.blocfirma {
     grid-area: 25 / 2 /span 1 / span 19;
     background-color: rgb(130, 136, 130);
     font-size: 20pt;
     padding: 5px;
-    max-height: 150px;
+    height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+.firma{
+    font-family: Consolas;
+    transform: rotate(-4deg);
+    padding-left: 50px;
 }
 
 #direccio {
@@ -159,10 +166,8 @@ table, tr, td {
 td{
     background-color: #D0D4A9;
 }
-.firma{
-    height: 100px;
-    width: auto;
-    margin-left: 100px;
-    margin-right: auto;
-    margin-top: 5px;
+
+#firma{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }

@@ -9,6 +9,7 @@
                 <meta charset="utf-8"/>
                 <title>Celler</title>
                 <link rel="stylesheet" href="celler.css"/>
+                <link rel="icon" href="pics/vino.ico"/>
             </head>
             <body>
                 <xsl:apply-templates select="factures/factura"/>
@@ -51,7 +52,7 @@
             </div>
             <div id="peu" style="clear: both;">
                 <div id="direccio">
-                    <div>Celler Can Ramis
+                    <div>Celler Can Palou
                         <br/>
                         Carrer Albeniz, 24
                         <br/>
@@ -61,11 +62,11 @@
                         <br/>
                         <br/>
                     </div>
-                    <div id="blocfirma">FIRMA:
+                    <div class="blocfirma">SIGNATURA:
                         <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <div class="firma">
+                            <xsl:call-template name="firma"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,5 +185,13 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <xsl:template name="firma">
+        <xsl:variable name="codiClient" select="comprador/@codi"/>
+        <xsl:variable name="Client" select="//client[@codi = $codiClient]"/>
+        <xsl:value-of select="substring($Client/nom,1,1)"/>.
+        <xsl:value-of select="$Client/cognoms"/>
+    </xsl:template>
+
 
 </xsl:stylesheet>
