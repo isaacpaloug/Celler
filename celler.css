@@ -26,11 +26,12 @@
 
 }
 
+/* BLOC DE LA INFORMACIÓ DEL CLIENT */
 #infoclient{
     grid-area: 12 / 2 / span 2 / span 12;
     border: 0.6mm solid black;
     border-radius: 2mm;
-    background-color: lightgreen;
+    background-color: #D0C08E;
     padding: 5px;
 }
 
@@ -60,17 +61,19 @@
 
 /* PRIMERA FILA TAULA*/
 .petit {
-    background-color: bisque;
+    background-color: #C7A336;
 }
 
 /* TOTAL */
 .total {
     font-size: 18pt;
     color: black;
-    background-color: burlywood;
+    background-color: #7D8724;
     font-family: Calibri;
 }
-
+.preutotal{
+    background-color: #ADBA32;
+}
 
 table,tr, td , #blocfirma {
     border: 2px solid;
@@ -136,12 +139,30 @@ table, tr, td {
 
 #blocfirma {
     grid-area: 25 / 2 /span 1 / span 19;
-    background-color: lightgreen;
+    background-color: rgb(130, 136, 130);
     font-size: 20pt;
     padding: 5px;
+    max-height: 150px;
 }
 
 #direccio {
     font-size: 12pt;
     padding: 5px;
+}
+
+/* CEL.LES AMB INFORMACIO */
+.aMa{
+    background-color: #D0C0A9;
+}
+
+/* CEL.LES BUIDES */
+td{
+    background-color: #D0D4A9;
+}
+.firma{
+    height: 100px;
+    width: auto;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 5px;
 }
