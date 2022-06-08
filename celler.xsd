@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="celler">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="productes"/>
+                <xs:element ref="clients"/>
+                <xs:element ref="factures"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="productes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="12" maxOccurs="12" name="producte" type="tipo_producte"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="tipo_producte">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="codi" use="required" type="xs:ID"/>
+                <xs:attribute name="preu" use="required" type="xs:float"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:element name="clients">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="client"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nom" type="tipo_nom_i_cognoms"/>
+                <xs:element name="cognoms" type="tipo_nom_i_cognoms"/>
+                <xs:element ref="contacte"/>
+            </xs:sequence>
+            <xs:attribute name="codi" use="required" type="xs:ID"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipo_nom_i_cognoms">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][a-z]+( [A-Z][a-z]+)?"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="contacte">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="3" ref="telefon"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="telefon">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="tipo_telefon">
+                    <xs:attribute name="tipus" use="required" type="tipo_tipus_telefon"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipo_telefon">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[6789]\d{2} \d{3} \d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_tipus_telefon">
+        <xs:restriction>
+            <xs:enumeration value="fix"/>
+            <xs:enumeration value="mobil"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="factures">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="factura"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="comprador"/>
+                <xs:element maxOccurs="unbounded" ref="unitats"/>
+            </xs:sequence>
+            <xs:attribute name="numero" use="required" type="tipo_numero_factura"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipo_numero_factura">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="F\d{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="comprador">
+        <xs:complexType>
+            <xs:attribute name="codi" use="required" type="xs:IDREF"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="unitats">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="codi" use="required" type="xs:IDREF"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

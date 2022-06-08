@@ -1,0 +1,147 @@
+
+
+* {
+    margin: 0;
+    font-family: Verdana;
+}
+
+#pag {
+    display: grid;
+    width: 210mm;
+    height: 297mm;
+    grid-template-rows: repeat(2, 1cm) 7mm repeat(27, 1 cm);
+    grid-template-columns: repeat(21, 1cm);
+    page-break-after: always;
+    background-color: white;
+}
+
+.logo{
+    grid-area: 2 / 2 / span 9 / span 19;
+    font-family: Arial;
+    font-size: 62pt;
+    text-align: center;
+    display: grid; 
+    border: 0px solid black;
+    border-radius: 2mm;
+
+}
+
+#infoclient{
+    grid-area: 12 / 2 / span 2 / span 12;
+    border: 0.6mm solid black;
+    border-radius: 2mm;
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+#infofactura{
+    grid-area: 16 / 2 / span 2 / span 19;
+    font-size: 16pt;
+    border-radius: 2mm;
+}
+
+
+.aMa, .telefons{
+    color: black ;
+    font-family: Calibri;
+    font-size: 12pt;
+}
+
+.telefons, .buit {
+    padding-left: 20mm;
+    font-size: 12pt;
+    width: 70mm;
+    margin-left: 20mm;
+}
+
+.buit{
+    height: 5mm;
+}
+
+/* PRIMERA FILA TAULA*/
+.petit {
+    background-color: bisque;
+}
+
+/* TOTAL */
+.total {
+    font-size: 18pt;
+    color: black;
+    background-color: burlywood;
+    font-family: Calibri;
+}
+
+
+table,tr, td , #blocfirma {
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 2mm;
+}
+
+tr{
+    height: 30px;
+}
+
+td:first-of-type{
+    width: 50px;
+    text-align: center;
+}
+
+td:nth-of-type(2){
+    padding-left: 20px;
+    width: 250px;
+}
+
+td:nth-of-type(3){
+    width: 70px;
+    text-align: center;
+}
+
+td:nth-of-type(4){
+    width: 70px;
+    text-align: center;
+}
+
+td:nth-of-type(5){
+    width: 70px;
+    text-align: center;
+}
+
+tr:not(:first-of-type)>td:nth-of-type(5){
+    text-align: right;
+    padding-right: 20px;
+}
+
+tr:last-of-type>td:first-of-type{
+    text-align: right;
+    padding-right: 10px;
+}
+
+tr:last-of-type>td:last-of-type{
+    text-align: right;
+    padding-right: 20px;
+}
+
+table, tr, td {
+    grid-area: 8 / 2 / 23 / 21;
+    border-color: black;
+    background-color: white;
+}
+
+#peu {
+    grid-area: 25 / 2 / span 1 / span 19;
+    border: black;
+    border-radius: 2mm;
+}
+
+#blocfirma {
+    grid-area: 25 / 2 /span 1 / span 19;
+    background-color: lightgreen;
+    font-size: 20pt;
+    padding: 5px;
+}
+
+#direccio {
+    font-size: 12pt;
+    padding: 5px;
+}

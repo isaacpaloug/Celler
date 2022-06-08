@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="celler.xsl"?>
+<celler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="celler.xsd">
+    <productes>
+        <producte codi="B1" preu="1.50">Vino Blanco de 1 litro(s)</producte>
+        <producte codi="B2" preu="2.50">Vino Blanco de 2 litro(s)</producte>
+        <producte codi="B3" preu="3.50">Vino Blanco de 3 litro(s)</producte>
+        <producte codi="B5" preu="5.50">Vino Blanco de 5 litro(s)</producte>
+        <producte codi="R1" preu="1.50">Vino Rosado de 1 litro(s)</producte>
+        <producte codi="R2" preu="2.50">Vino Rosado de 2 litro(s)</producte>
+        <producte codi="R3" preu="3.50">Vino Rosado de 3 litro(s)</producte>
+        <producte codi="R5" preu="5.50">Vino Rosado de 5 litro(s)</producte>
+        <producte codi="T1" preu="1.50">Vino Tinto de 1 litro(s)</producte>
+        <producte codi="T2" preu="2.50">Vino Tinto de 2 litro(s)</producte>
+        <producte codi="T3" preu="3.50">Vino Tinto de 3 litro(s)</producte>
+        <producte codi="T5" preu="5.50">Vino Tinto de 5 litro(s)</producte>
+    </productes>
+    <clients>
+        <client codi="C00001">
+            <nom>Adolfo</nom>
+            <cognoms>Salazar Guerrero</cognoms>
+            <contacte>
+                <telefon tipus="mobil">711 767 644</telefon>
+                <telefon tipus="fix">904 988 382</telefon>
+            </contacte>
+        </client>
+        <client codi="C00002">
+            <nom>Africa</nom>
+            <cognoms>Simon Gonzalez</cognoms>
+            <contacte>
+                <telefon tipus="fix">890 285 002</telefon>
+                <telefon tipus="fix">873 130 999</telefon>
+                <telefon tipus="fix">840 256 905</telefon>
+            </contacte>
+        </client>
+        <client codi="C00003">
+            <nom>Pascual</nom>
+            <cognoms>Bravo Menendez</cognoms>
+            <contacte>
+                <telefon tipus="mobil">798 236 123</telefon>
+                <telefon tipus="mobil">765 421 336</telefon>
+                <telefon tipus="mobil">634 920 535</telefon>
+            </contacte>
+        </client>
+        <client codi="C00004">
+            <nom>Mateo</nom>
+            <cognoms>Marti Perez</cognoms>
+            <contacte>
+                <telefon tipus="mobil">793 901 542</telefon>
+                <telefon tipus="mobil">695 409 648</telefon>
+            </contacte>
+        </client>
+        <client codi="C00005">
+            <nom>Ricardo</nom>
+            <cognoms>Segura Costa</cognoms>
+            <contacte>
+                <telefon tipus="mobil">736 403 329</telefon>
+            </contacte>
+        </client>
+        <client codi="C00006">
+            <nom>Lorena</nom>
+            <cognoms>Marcos Morales</cognoms>
+            <contacte>
+                <telefon tipus="fix">878 764 873</telefon>
+                <telefon tipus="mobil">684 617 404</telefon>
+            </contacte>
+        </client>
+        <client codi="C00007">
+            <nom>Moises</nom>
+            <cognoms>Carrillo Guerrero</cognoms>
+            <contacte>
+                <telefon tipus="fix">948 709 433</telefon>
+            </contacte>
+        </client>
+        <client codi="C00008">
+            <nom>Victoriano</nom>
+            <cognoms>Calvo</cognoms>
+            <contacte>
+                <telefon tipus="fix">823 952 457</telefon>
+                <telefon tipus="mobil">705 674 190</telefon>
+            </contacte>
+        </client>
+        <client codi="C00009">
+            <nom>Adolfo</nom>
+            <cognoms>Saez Diaz</cognoms>
+            <contacte>
+                <telefon tipus="fix">972 746 797</telefon>
+            </contacte>
+        </client>
+        <client codi="C00010">
+            <nom>Justo</nom>
+            <cognoms>Marcos Caballero</cognoms>
+            <contacte>
+                <telefon tipus="fix">862 796 668</telefon>
+                <telefon tipus="mobil">660 884 131</telefon>
+            </contacte>
+        </client>
+    </clients>
+    <factures>
+        <factura numero="000001">
+            <comprador codi="C00010"/>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000002">
+            <comprador codi="C00005"/>
+            <unitats codi="B2">3</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T2">3</unitats>
+        </factura>
+        <factura numero="000003">
+            <comprador codi="C00004"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B2">3</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T2">3</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000004">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000005">
+            <comprador codi="C00010"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T1">5</unitats>
+        </factura>
+        <factura numero="000006">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T5">5</unitats>
+        </factura>
+        <factura numero="000007">
+            <comprador codi="C00005"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T2">5</unitats>
+        </factura>
+        <factura numero="000008">
+            <comprador codi="C00006"/>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T2">3</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000009">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000010">
+            <comprador codi="C00006"/>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R2">2</unitats>
+        </factura>
+        <factura numero="000011">
+            <comprador codi="C00004"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T3">5</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000012">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T3">4</unitats>
+        </factura>
+        <factura numero="000013">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000014">
+            <comprador codi="C00010"/>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000015">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">5</unitats>
+        </factura>
+        <factura numero="000016">
+            <comprador codi="C00010"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">3</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000017">
+            <comprador codi="C00006"/>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T2">1</unitats>
+            <unitats codi="T3">4</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000018">
+            <comprador codi="C00008"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T5">5</unitats>
+        </factura>
+        <factura numero="000019">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="T2">3</unitats>
+        </factura>
+        <factura numero="000020">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B5">3</unitats>
+            <unitats codi="R1">3</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000021">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="R5">4</unitats>
+        </factura>
+        <factura numero="000022">
+            <comprador codi="C00005"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T1">4</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T3">3</unitats>
+        </factura>
+        <factura numero="000023">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R2">5</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000024">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000025">
+            <comprador codi="C00009"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R1">3</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">1</unitats>
+        </factura>
+        <factura numero="000026">
+            <comprador codi="C00004"/>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">3</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T2">2</unitats>
+        </factura>
+        <factura numero="000027">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T3">4</unitats>
+        </factura>
+        <factura numero="000028">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="T1">3</unitats>
+        </factura>
+        <factura numero="000029">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T2">5</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000030">
+            <comprador codi="C00008"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T3">1</unitats>
+        </factura>
+        <factura numero="000031">
+            <comprador codi="C00008"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T1">4</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">3</unitats>
+        </factura>
+        <factura numero="000032">
+            <comprador codi="C00001"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="T2">1</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000033">
+            <comprador codi="C00002"/>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B5">3</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T5">5</unitats>
+        </factura>
+        <factura numero="000034">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">1</unitats>
+        </factura>
+        <factura numero="000035">
+            <comprador codi="C00008"/>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R3">1</unitats>
+        </factura>
+        <factura numero="000036">
+            <comprador codi="C00005"/>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T1">5</unitats>
+        </factura>
+        <factura numero="000037">
+            <comprador codi="C00008"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R2">3</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T3">3</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000038">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R2">1</unitats>
+        </factura>
+        <factura numero="000039">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B2">3</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T1">2</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000040">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T2">5</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000041">
+            <comprador codi="C00005"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R2">5</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="T3">2</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000042">
+            <comprador codi="C00002"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="T1">2</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T5">5</unitats>
+        </factura>
+        <factura numero="000043">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">3</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="B5">3</unitats>
+            <unitats codi="R1">3</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T2">4</unitats>
+        </factura>
+        <factura numero="000044">
+            <comprador codi="C00001"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="T2">5</unitats>
+            <unitats codi="T3">5</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000045">
+            <comprador codi="C00001"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T2">3</unitats>
+        </factura>
+        <factura numero="000046">
+            <comprador codi="C00002"/>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="T1">4</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000047">
+            <comprador codi="C00008"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="T2">5</unitats>
+        </factura>
+        <factura numero="000048">
+            <comprador codi="C00008"/>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="T1">3</unitats>
+        </factura>
+        <factura numero="000049">
+            <comprador codi="C00008"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">1</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000050">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T3">2</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000051">
+            <comprador codi="C00002"/>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="T1">4</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000052">
+            <comprador codi="C00005"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">4</unitats>
+        </factura>
+        <factura numero="000053">
+            <comprador codi="C00009"/>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="T1">1</unitats>
+        </factura>
+        <factura numero="000054">
+            <comprador codi="C00005"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="R2">3</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T1">4</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000055">
+            <comprador codi="C00006"/>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R2">3</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T1">4</unitats>
+        </factura>
+        <factura numero="000056">
+            <comprador codi="C00006"/>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T2">3</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000057">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T1">5</unitats>
+        </factura>
+        <factura numero="000058">
+            <comprador codi="C00005"/>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T3">3</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000059">
+            <comprador codi="C00008"/>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">3</unitats>
+        </factura>
+        <factura numero="000060">
+            <comprador codi="C00004"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="T2">3</unitats>
+        </factura>
+        <factura numero="000061">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000062">
+            <comprador codi="C00007"/>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T3">2</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000063">
+            <comprador codi="C00002"/>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="T1">4</unitats>
+            <unitats codi="T2">1</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000064">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">1</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000065">
+            <comprador codi="C00001"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R2">5</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T2">3</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000066">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="B5">5</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T2">5</unitats>
+            <unitats codi="T3">3</unitats>
+        </factura>
+        <factura numero="000067">
+            <comprador codi="C00008"/>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000068">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T3">2</unitats>
+        </factura>
+        <factura numero="000069">
+            <comprador codi="C00001"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T5">1</unitats>
+        </factura>
+        <factura numero="000070">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T3">2</unitats>
+        </factura>
+        <factura numero="000071">
+            <comprador codi="C00005"/>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T3">4</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000072">
+            <comprador codi="C00001"/>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="R1">3</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="T3">4</unitats>
+        </factura>
+        <factura numero="000073">
+            <comprador codi="C00010"/>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T1">3</unitats>
+            <unitats codi="T2">1</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000074">
+            <comprador codi="C00010"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T3">4</unitats>
+        </factura>
+        <factura numero="000075">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T3">3</unitats>
+        </factura>
+        <factura numero="000076">
+            <comprador codi="C00010"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="T1">1</unitats>
+        </factura>
+        <factura numero="000077">
+            <comprador codi="C00006"/>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">5</unitats>
+            <unitats codi="R1">5</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T2">2</unitats>
+        </factura>
+        <factura numero="000078">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="T1">2</unitats>
+        </factura>
+        <factura numero="000079">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">3</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T1">2</unitats>
+        </factura>
+        <factura numero="000080">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">1</unitats>
+        </factura>
+        <factura numero="000081">
+            <comprador codi="C00005"/>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B3">1</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">1</unitats>
+            <unitats codi="T3">1</unitats>
+        </factura>
+        <factura numero="000082">
+            <comprador codi="C00001"/>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="T1">5</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">4</unitats>
+        </factura>
+        <factura numero="000083">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R2">5</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">5</unitats>
+        </factura>
+        <factura numero="000084">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B5">2</unitats>
+            <unitats codi="R1">2</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="T1">2</unitats>
+            <unitats codi="T2">3</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000085">
+            <comprador codi="C00005"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">4</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R2">5</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000086">
+            <comprador codi="C00005"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">2</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="T1">2</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000087">
+            <comprador codi="C00010"/>
+            <unitats codi="B2">3</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="R2">5</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">1</unitats>
+            <unitats codi="T5">2</unitats>
+        </factura>
+        <factura numero="000088">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R3">5</unitats>
+            <unitats codi="T1">2</unitats>
+            <unitats codi="T2">2</unitats>
+            <unitats codi="T3">2</unitats>
+        </factura>
+        <factura numero="000089">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="B2">1</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="T3">5</unitats>
+        </factura>
+        <factura numero="000090">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="T1">2</unitats>
+        </factura>
+        <factura numero="000091">
+            <comprador codi="C00006"/>
+            <unitats codi="B1">2</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R5">2</unitats>
+            <unitats codi="T2">3</unitats>
+        </factura>
+        <factura numero="000092">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B3">2</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R1">1</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="T3">1</unitats>
+        </factura>
+        <factura numero="000093">
+            <comprador codi="C00001"/>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="R5">5</unitats>
+            <unitats codi="T2">5</unitats>
+            <unitats codi="T5">4</unitats>
+        </factura>
+        <factura numero="000094">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B3">4</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">4</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000095">
+            <comprador codi="C00002"/>
+            <unitats codi="B1">4</unitats>
+            <unitats codi="B5">1</unitats>
+            <unitats codi="R3">2</unitats>
+            <unitats codi="T3">2</unitats>
+        </factura>
+        <factura numero="000096">
+            <comprador codi="C00003"/>
+            <unitats codi="B1">3</unitats>
+            <unitats codi="B3">2</unitats>
+        </factura>
+        <factura numero="000097">
+            <comprador codi="C00008"/>
+            <unitats codi="B2">3</unitats>
+            <unitats codi="R1">4</unitats>
+            <unitats codi="R2">1</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="R5">1</unitats>
+        </factura>
+        <factura numero="000098">
+            <comprador codi="C00007"/>
+            <unitats codi="B1">1</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R2">2</unitats>
+            <unitats codi="R3">1</unitats>
+            <unitats codi="R5">3</unitats>
+            <unitats codi="T3">3</unitats>
+            <unitats codi="T5">3</unitats>
+        </factura>
+        <factura numero="000099">
+            <comprador codi="C00009"/>
+            <unitats codi="B1">5</unitats>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="R2">3</unitats>
+            <unitats codi="R3">3</unitats>
+            <unitats codi="T1">1</unitats>
+            <unitats codi="T5">5</unitats>
+        </factura>
+        <factura numero="000100">
+            <comprador codi="C00005"/>
+            <unitats codi="B2">5</unitats>
+            <unitats codi="B5">4</unitats>
+            <unitats codi="R2">4</unitats>
+            <unitats codi="R5">4</unitats>
+            <unitats codi="T2">4</unitats>
+            <unitats codi="T3">2</unitats>
+        </factura>
+    </factures>
+</celler>
