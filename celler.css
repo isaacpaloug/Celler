@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: Signatures;
+    src: url("fonts/Signatures.otf");
+}
 
 * {
     margin: 0;
@@ -145,11 +148,13 @@ table, tr, td {
     height: 150px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 5px;
+    border: solid 2px black;
 }
 .firma{
-    font-family: Consolas;
+    font-size: 40px;
     transform: rotate(-4deg);
     padding-left: 50px;
+    font-family: Signatures;
 }
 
 #direccio {
@@ -167,7 +172,3 @@ td{
     background-color: #D0D4A9;
 }
 
-#firma{
-    font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
