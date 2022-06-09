@@ -1,3 +1,3 @@
 # Celler
 
-![Esta es una imagen](/pics/exemple.JPG)
+![Esta es una imagen](/pics/Exemple.JPG)
