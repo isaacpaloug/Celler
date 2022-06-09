@@ -7,7 +7,7 @@
         <html>
             <head>
                 <meta charset="utf-8"/>
-                <title>Celler</title>
+                <title>Celler Can Palou</title>
                 <link rel="stylesheet" href="celler.css"/>
                 <link rel="icon" href="pics/vino.ico"/>
             </head>
@@ -41,7 +41,7 @@
                     </xsl:call-template>
                     <tr>
                         <td colspan="4" class="total"><b>TOTAL:</b></td>
-                        <td class="aMa total">
+                        <td class="aMatotal">
                             <xsl:call-template name="calcular">
                                 <xsl:with-param name="llista_compra" select="unitats"/>
                                 <xsl:with-param name="total" select="0"/>
@@ -78,7 +78,7 @@
         <xsl:variable name="client" select="//client[@codi = $codi_client]"/>
         <div>Informació Client [CODI <xsl:value-of select="$codi_client"/>] </div>
         <br/>
-        <div> <b>Nom i cognoms:</b> <div class="aMa">
+        <div> <b>Nom i cognoms:</b> <div>
             <xsl:value-of select="concat($client/cognoms, ', ', $client/nom)"/>
         </div>
         </div>

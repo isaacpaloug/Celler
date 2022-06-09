@@ -2,10 +2,15 @@
     font-family: Signatures;
     src: url("fonts/Signatures.otf");
 }
+@font-face {
+    font-family: CoffeExtra;
+    src: url("fonts/CoffeeExtra.otf");
+}
 
 * {
     margin: 0;
     font-family: Verdana;
+
 }
 
 #pag {
@@ -20,11 +25,10 @@
 
 .logo{
     grid-area: 2 / 2 / span 9 / span 19;
-    font-family: Arial;
+    font-family:CoffeExtra;
     font-size: 62pt;
     text-align: center;
-    display: grid; 
-    border: 0px solid black;
+    display: grid;
     border-radius: 2mm;
 
 }
@@ -34,8 +38,9 @@
     grid-area: 12 / 2 / span 2 / span 12;
     border: 0.6mm solid black;
     border-radius: 2mm;
-    background-color: #D0C08E;
+    background-color: #b3cde0;
     padding: 5px;
+    width: 70%;
 }
 
 #infofactura{
@@ -64,14 +69,14 @@
 
 /* PRIMERA FILA TAULA*/
 .petit {
-    background-color: #C7A336;
+    background-color: #5F84A2;
 }
 
 /* TOTAL */
 .total {
     font-size: 18pt;
     color: black;
-    background-color: #7D8724;
+    background-color: #6497b1;
     font-family: Calibri;
 }
 .preutotal{
@@ -142,11 +147,11 @@ table, tr, td {
 
 .blocfirma {
     grid-area: 25 / 2 /span 1 / span 19;
-    background-color: rgb(130, 136, 130);
+    background-color: #005b96;
     font-size: 20pt;
     padding: 5px;
     height: 150px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Monaco;
     border-radius: 5px;
     border: solid 2px black;
 }
@@ -155,6 +160,7 @@ table, tr, td {
     transform: rotate(-4deg);
     padding-left: 50px;
     font-family: Signatures;
+    font-style: revert;
 }
 
 #direccio {
@@ -164,11 +170,13 @@ table, tr, td {
 
 /* CEL.LES AMB INFORMACIO */
 .aMa{
-    background-color: #D0C0A9;
+    background-color: white;
 }
 
 /* CEL.LES BUIDES */
 td{
-    background-color: #D0D4A9;
+    background-color: white;
 }
-
+.aMatotal{
+    background-color: #b3cde0;
+}
